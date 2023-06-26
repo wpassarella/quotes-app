@@ -1,7 +1,7 @@
 import bulletImg from "./bullet.png"
 import "./Quote.scss"
-
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
 
 const Quote = ({id, text}) => {
   return (

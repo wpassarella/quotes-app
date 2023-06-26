@@ -1,6 +1,6 @@
 import { useState } from "react"
-
 import Menu from "../Menu/Menu"
+import PropTypes from "prop-types"
 
 const Header = ({heading, changeMessage}) => {
   const [message, setMessage] = useState(heading)

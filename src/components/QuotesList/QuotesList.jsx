@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-
 import Quote from "../Quote/Quote"
+import PropTypes from "prop-types"
 
 const QuotesList = ({quotes}) => {
   const [totalQuotes, setTotalQuotes] = useState(0)
