@@ -93,10 +93,11 @@ jobs:
     needs: [test, e2e]
     runs-on: ubuntu-22.04
     steps:
-      - name: Downloading project
-        uses: actions/checkout@v3
+      - name: Download build
+        uses: actions/download-artifact@v3
         with:
-          fetch-depth: 0
+          name: build-version
+          path: build
       - name: Deploying to Netlify
         if: ${{ github.event_name == 'push' }}
         uses: netlify/actions/cli@master
