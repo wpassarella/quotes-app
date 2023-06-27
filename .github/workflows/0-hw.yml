@@ -15,3 +15,5 @@ jobs:
       - name: Mostrar fecha
         run: date
       - run: ls -l
+      - run: echo "jamon" > jmn.txt
+      - run: cat jmn.txt
