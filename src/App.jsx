@@ -22,7 +22,7 @@ const mockData = [
 ]
 
 const App = () => {
-  const [heading, setHeading] = useState("Cita ilustres")
+  const [heading, setHeading] = useState("Citas ilustres")
   const changeMessage = message => setHeading(message)
   // const [quotes, setQuotes] = useState(mockData)
   const [quotes, setQuotes] = useState([])
