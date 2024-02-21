@@ -1,0 +1,7 @@
+name: dummy
+
+jobs:
+  hello:
+    runs-on: ubuntu-22.04
+    steps:
+    - run: echo "Hello, world!"
